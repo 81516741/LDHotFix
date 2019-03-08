@@ -1,13 +1,13 @@
 //
 //  LDViewController.m
-//  LDHotFix
+//  LDHotfix
 //
-//  Created by 81516741@qq.com on 03/08/2019.
-//  Copyright (c) 2019 81516741@qq.com. All rights reserved.
+//  Created by 81516741@qq.com on 04/15/2018.
+//  Copyright (c) 2018 81516741@qq.com. All rights reserved.
 //
 
 #import "LDViewController.h"
-
+#import "ProblemClass.h"
 @interface LDViewController ()
 
 @end
@@ -17,13 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    ProblemClass * pb = [[ProblemClass alloc] init];
+    CGFloat result = [pb divideUsingDenominator:0 dd:@"fadsf"];
+    [pb test:33 value2:3.1111 value3:@""];
+    NSLog(@"结果是%f",result);
 }
 
 @end

@@ -1,0 +1,6 @@
+framework module LDHotFix {
+  umbrella header "LDHotFix-umbrella.h"
+
+  export *
+  module * { export * }
+}

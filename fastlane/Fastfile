@@ -1,0 +1,41 @@
+
+desc 'ManagerLib 使用这个航道, 可以快速的对自己的私有库, 进行升级维护'
+desc '需要传的参数有 版本（tag）  spec的名字（target）  spec库的名字（repo）'
+desc '可以直接执行脚本./pod_update.sh'
+lane :ManagerLib do |options|
+
+tagName = options[:tag]
+targetName = options[:target]
+repoName = options[:repo]
+
+# 具体这个巷道上面执行哪些行为
+# 1. git add .
+git_add(path: ".")
+#    git commit -m 'xxx'
+git_commit(path: ".", message: "版本升级维护")
+#    git push origin master
+push_to_git_remote
+
+# 验证tag是否存在,如果存在, 应该删除本地标签和远程标签
+#if 判断标签是否存在
+#    执行删除本地/远程标签
+#end
+if git_tag_exists(tag: tagName)
+    UI.message("发现tag:#{tagName} 已经存在, 即将执行, 删除动作 🚀")
+    tag_delete(tag:tagName)
+end
+
+# 2. git tag 标签名称
+add_git_tag(
+tag: tagName
+)
+#    git push --tags
+push_git_tags
+
+# 3. pod spec lint
+pod_lib_lint(allow_warnings: true)
+#    pod repo push XXXX xxx.podspec
+pod_push(path: "#{targetName}.podspec", allow_warnings: true)
+
+
+end

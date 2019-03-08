@@ -1,0 +1,23 @@
+PODS:
+  - Aspects (1.4.1)
+  - LDHotFix (0.1.0):
+    - Aspects
+
+DEPENDENCIES:
+  - LDHotFix (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Aspects
+
+EXTERNAL SOURCES:
+  LDHotFix:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  LDHotFix: 26d0a533aba24d9b8f7ecc0cba3fbe7a04829be6
+
+PODFILE CHECKSUM: 680937190a7b4f24244f5f66d0c01e2a2a8bf53b
+
+COCOAPODS: 1.6.0.beta.2

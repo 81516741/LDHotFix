@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DDAA6C122327660007AA2E9 /* fix.js in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAA6BD22327660007AA2E9 /* fix.js */; };
+		0DDAA6C222327660007AA2E9 /* ProblemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA6BE22327660007AA2E9 /* ProblemClass.m */; };
+		0DDAA6C322327660007AA2E9 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA6BF22327660007AA2E9 /* TestObject.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		06AFA88473E78D50D4431C22 /* Pods-LDHotFix_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDHotFix_Tests.release.xcconfig"; path = "Target Support Files/Pods-LDHotFix_Tests/Pods-LDHotFix_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0DDAA6BC22327660007AA2E9 /* ProblemClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemClass.h; sourceTree = "<group>"; };
+		0DDAA6BD22327660007AA2E9 /* fix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fix.js; sourceTree = "<group>"; };
+		0DDAA6BE22327660007AA2E9 /* ProblemClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemClass.m; sourceTree = "<group>"; };
+		0DDAA6BF22327660007AA2E9 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		0DDAA6C022327660007AA2E9 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		1395B718E1BE7CB0B9E00768 /* Pods-LDHotFix_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDHotFix_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LDHotFix_Tests/Pods-LDHotFix_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		46643BC61CDFF9ADE8ACE9E5 /* Pods-LDHotFix_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDHotFix_Example.release.xcconfig"; path = "Target Support Files/Pods-LDHotFix_Example/Pods-LDHotFix_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LDHotFix_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDHotFix_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,13 +68,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		640F6EB1DFCC74F8880AB76D /* Pods_LDHotFix_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDHotFix_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		703A4DE039D1722C12AE7448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		703A4DE039D1722C12AE7448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94AADFF21CC63FB3E583A975 /* Pods-LDHotFix_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDHotFix_Example.debug.xcconfig"; path = "Target Support Files/Pods-LDHotFix_Example/Pods-LDHotFix_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BC25310BE146B78528DF34F2 /* Pods_LDHotFix_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDHotFix_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C77998CDBEBD7E439719E908 /* LDHotFix.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LDHotFix.podspec; path = ../LDHotFix.podspec; sourceTree = "<group>"; };
-		C8A7615743316D4FABFDDD0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C77998CDBEBD7E439719E908 /* LDHotFix.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LDHotFix.podspec; path = ../LDHotFix.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8A7615743316D4FABFDDD0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,6 @@
 				1395B718E1BE7CB0B9E00768 /* Pods-LDHotFix_Tests.debug.xcconfig */,
 				06AFA88473E78D50D4431C22 /* Pods-LDHotFix_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +151,11 @@
 		6003F593195388D20070C39A /* Example for LDHotFix */ = {
 			isa = PBXGroup;
 			children = (
+				0DDAA6BD22327660007AA2E9 /* fix.js */,
+				0DDAA6BC22327660007AA2E9 /* ProblemClass.h */,
+				0DDAA6BE22327660007AA2E9 /* ProblemClass.m */,
+				0DDAA6C022327660007AA2E9 /* TestObject.h */,
+				0DDAA6BF22327660007AA2E9 /* TestObject.m */,
 				6003F59C195388D20070C39A /* LDAppDelegate.h */,
 				6003F59D195388D20070C39A /* LDAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -248,6 +260,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "81516741@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = LCYGMG7PBG;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -277,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDAA6C122327660007AA2E9 /* fix.js in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -300,15 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LDHotFix_Tests-checkManifestLockResult.txt",
 			);
@@ -322,16 +334,14 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LDHotFix_Example/Pods-LDHotFix_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/LDHotFix/LDHotFix.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LDHotFix.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,15 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LDHotFix_Example-checkManifestLockResult.txt",
 			);
@@ -368,7 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DDAA6C222327660007AA2E9 /* ProblemClass.m in Sources */,
 				6003F59E195388D20070C39A /* LDAppDelegate.m in Sources */,
+				0DDAA6C322327660007AA2E9 /* TestObject.m in Sources */,
 				6003F5A7195388D20070C39A /* LDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -498,6 +506,7 @@
 			baseConfigurationReference = 94AADFF21CC63FB3E583A975 /* Pods-LDHotFix_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LCYGMG7PBG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDHotFix/LDHotFix-Prefix.pch";
 				INFOPLIST_FILE = "LDHotFix/LDHotFix-Info.plist";
@@ -513,6 +522,7 @@
 			baseConfigurationReference = 46643BC61CDFF9ADE8ACE9E5 /* Pods-LDHotFix_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LCYGMG7PBG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDHotFix/LDHotFix-Prefix.pch";
 				INFOPLIST_FILE = "LDHotFix/LDHotFix-Info.plist";

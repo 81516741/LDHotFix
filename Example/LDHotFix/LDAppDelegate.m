@@ -1,18 +1,38 @@
 //
 //  LDAppDelegate.m
-//  LDHotFix
+//  LDHotfix
 //
-//  Created by 81516741@qq.com on 03/08/2019.
-//  Copyright (c) 2019 81516741@qq.com. All rights reserved.
+//  Created by 81516741@qq.com on 04/15/2018.
+//  Copyright (c) 2018 81516741@qq.com. All rights reserved.
 //
 
 #import "LDAppDelegate.h"
+#import "LDHotfixTool.h"
+#import "TestObject.h"
+#import "LDViewController.h"
+
+@interface LDAppDelegate ()
+
+@end
 
 @implementation LDAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [LDViewController new];
+    [self.window makeKeyAndVisible];
+    
+    [LDHotfixTool registerHotfix];
+    
+    NSString * jsPath = [[NSBundle mainBundle] pathForResource:@"fix" ofType:@"js"];
+    NSString * jsStr = [NSString stringWithContentsOfFile:jsPath
+                                                    encoding:NSUTF8StringEncoding
+                                                       error:nil];
+    
+    [LDHotfixTool evaluateScript:jsStr];
+    
     return YES;
 }
 
