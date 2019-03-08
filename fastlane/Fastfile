@@ -39,3 +39,5 @@ pod_push(path: "#{targetName}.podspec", allow_warnings: true)
 
 
 end
+
+#fastlane ManagerLib target:LDHotFix tag:0.1.0

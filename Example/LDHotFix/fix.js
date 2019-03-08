@@ -19,6 +19,6 @@ function(instance, originInvocation, originArguments){
 fixInstanceMethodReplace
 ('ProblemClass','test:value2:value3:',
  function(instance, originInvocation, originArguments){
- runInvocation(originInvocation,['Float(343421.432532532)','Int(3434234)','sging']);
+ runInvocation(originInvocation,['Float(3.141592653)','Int(81516741)','就是替换了']);
  });
 
