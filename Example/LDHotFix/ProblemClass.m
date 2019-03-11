@@ -18,7 +18,6 @@
     return value;
 }
 - (void)test:(CGFloat)value1 value2:(NSInteger)value2 value3:(NSString *)value3{
-    NSLog(@"最终打印%f----%d",value1,value2);
-//    self,_cmd
+    NSLog(@"最终打印%f----%ld---%@",value1,(long)value2,value3);
 }
 @end

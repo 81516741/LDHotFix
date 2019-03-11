@@ -347,11 +347,11 @@ static Class aspect_hookClass(NSObject *self, NSError **error) {
 	NSString *className = NSStringFromClass(baseClass);
 
     // Already subclassed
-	if ([className hasSuffix:AspectsSubclassSuffix]) {
-		return baseClass;
+    if ([className hasSuffix:AspectsSubclassSuffix]) {
+        return baseClass;
 
         // We swizzle a class object, not a single object.
-	}else if (class_isMetaClass(baseClass)) {
+    }else if (class_isMetaClass(baseClass)) {
         return aspect_swizzleClassInPlace((Class)self);
         // Probably a KVO'ed class. Swizzle in place. Also swizzle meta classes in place.
     }else if (statedClass != baseClass) {

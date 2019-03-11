@@ -46,28 +46,12 @@ if (obj != nil) {\
 #pragma mark - public method
 + (void)registerHotfix
 {
-    [self context][@"fixInstanceMethodBefore"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
-        [self _fixWithMethod:NO aspectionOptions:AspectPositionBefore instanceName:instanceName selectorName:selectorName fixImpl:fixImpl];
-    };
-    
-    [self context][@"fixInstanceMethodReplace"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
+    [self context][@"fixInstanceMethod"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
         [self _fixWithMethod:NO aspectionOptions:AspectPositionInstead instanceName:instanceName selectorName:selectorName fixImpl:fixImpl];
     };
     
-    [self context][@"fixInstanceMethodAfter"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
-        [self _fixWithMethod:NO aspectionOptions:AspectPositionAfter instanceName:instanceName selectorName:selectorName fixImpl:fixImpl];
-    };
-    
-    [self context][@"fixClassMethodBefore"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
-        [self _fixWithMethod:YES aspectionOptions:AspectPositionBefore instanceName:instanceName selectorName:selectorName fixImpl:fixImpl];
-    };
-    
-    [self context][@"fixClassMethodReplace"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
+    [self context][@"fixClassMethod"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
         [self _fixWithMethod:YES aspectionOptions:AspectPositionInstead instanceName:instanceName selectorName:selectorName fixImpl:fixImpl];
-    };
-    
-    [self context][@"fixClassMethodAfter"] = ^(NSString *instanceName, NSString *selectorName, JSValue *fixImpl) {
-        [self _fixWithMethod:YES aspectionOptions:AspectPositionAfter instanceName:instanceName selectorName:selectorName fixImpl:fixImpl];
     };
     
     [self context][@"runClassWithParamters"] = ^id(NSString *className, NSString *selectorName, id obj1, id obj2, id obj3, id obj4, id obj5,id obj6,id obj7) {
@@ -111,12 +95,10 @@ if (obj != nil) {\
             NSString * param = params[i];
             NSAssert([param isKindOfClass:NSString.self], @"js传参必须是字符串类型");
             if ([predicateInt evaluateWithObject:param]) {
-                NSLog(@"匹配到了Int");
                 param = [[param stringByReplacingOccurrencesOfString:@"Int(" withString:@""] stringByReplacingOccurrencesOfString:@")" withString:@""];
                 long long arg = [param longLongValue];
                 [invocation setArgument:&arg atIndex:i + 2];
             } else if ([predicateFloat evaluateWithObject:param]) {
-                NSLog(@"匹配到了Float");
                 param = [[param stringByReplacingOccurrencesOfString:@"Float(" withString:@""] stringByReplacingOccurrencesOfString:@")" withString:@""];
                 double arg = [param doubleValue];
                 [invocation setArgument:&arg atIndex:i + 2];
@@ -142,11 +124,11 @@ if (obj != nil) {\
 
 #pragma mark - private method
 + (void)_fixWithMethod:(BOOL)isClassMethod aspectionOptions:(AspectOptions)option instanceName:(NSString *)instanceName selectorName:(NSString *)selectorName fixImpl:(JSValue *)fixImpl {
+    SEL sel = NSSelectorFromString(selectorName);
     Class klass = NSClassFromString(instanceName);
     if (isClassMethod) {
         klass = object_getClass(klass);
     }
-    SEL sel = NSSelectorFromString(selectorName);
     [klass aspect_hookSelector:sel withOptions:option usingBlock:^(id<AspectInfo> aspectInfo){
         [fixImpl callWithArguments:@[aspectInfo.instance, aspectInfo.originalInvocation, aspectInfo.arguments]];
     } error:nil];

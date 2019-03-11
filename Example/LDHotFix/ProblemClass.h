@@ -10,5 +10,5 @@
 
 @interface ProblemClass : NSObject
 - (float)divideUsingDenominator:(NSInteger)denominator dd:(NSString *)nimei;
-- (void)test:(CGFloat)value1 value2:(CGFloat)value2 value3:(NSString *)value3;
+- (void)test:(CGFloat)value1 value2:(NSInteger)value2 value3:(NSString *)value3;
 @end
