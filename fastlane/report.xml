@@ -5,37 +5,37 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: git_add" time="0.144333">
+      <testcase classname="fastlane.lanes" name="0: git_add" time="0.115438">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: git_commit" time="0.113264">
+      <testcase classname="fastlane.lanes" name="1: git_commit" time="0.102482">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: push_to_git_remote" time="19.011188">
+      <testcase classname="fastlane.lanes" name="2: push_to_git_remote" time="10.90915">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: git_tag_exists" time="0.023135">
+      <testcase classname="fastlane.lanes" name="3: git_tag_exists" time="0.013734">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: add_git_tag" time="0.032527">
+      <testcase classname="fastlane.lanes" name="4: add_git_tag" time="0.022441">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: push_git_tags" time="8.220861">
+      <testcase classname="fastlane.lanes" name="5: push_git_tags" time="10.712933">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: pod_lib_lint" time="0.753212">
+      <testcase classname="fastlane.lanes" name="6: pod_lib_lint" time="0.342811">
         
           <failure message="/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:232:in `block in execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:36:in `block in parsing_binding'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/commands_generator.rb:333:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/fastlane/lib/fastlane/cli_tools_distributor.rb:113:in `take_off'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.114.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:22:in `load'&#10;/usr/local/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'bundle exec pod lib lint --allow-warnings' was 1 instead of 0.&#10;bundler: failed to load command: pod (/usr/local/bin/pod)&#10;Bundler::GemNotFound: Could not find json-1.8.3 in any of the sources&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/spec_set.rb:91:in `block in materialize'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/spec_set.rb:85:in `map!'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/spec_set.rb:85:in `materialize'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/definition.rb:171:in `specs'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/definition.rb:238:in `specs_for'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/definition.rb:227:in `requested_specs'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/runtime.rb:108:in `block in definition_method'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/runtime.rb:20:in `setup'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler.rb:107:in `setup'&#10;  /Library/Ruby/Gems/2.3.0/gems/bundler-1.16.2/lib/bundler/setup.rb:20:in `&lt;top (required)&gt;'&#10;  /Library/Ruby/Site/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'&#10;  /Library/Ruby/Site/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'&#10;" />
         

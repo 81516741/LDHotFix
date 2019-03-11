@@ -1,6 +1,6 @@
 PODS:
   - Aspects (1.4.1)
-  - LDHotFix (0.1.0):
+  - LDHotFix (0.1.3):
     - Aspects
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  LDHotFix: 38f83a0c6c5a2017acd952bc7d6c25140f04009e
+  LDHotFix: 446fc4ff3706499b5579d75bef6d598bac3b5d11
 
 PODFILE CHECKSUM: 680937190a7b4f24244f5f66d0c01e2a2a8bf53b
 
