@@ -25,11 +25,10 @@
 {
     //instance method test
     ProblemClass * pb = [[ProblemClass alloc] init];
-    CGFloat result = [pb divide:0 dd:@"fadsf"];
+    [pb divide:0 dd:@"fadsf"];
     [pb test:3.1111 value2:3333 value3:@"11111"];
-    NSLog(@"结果是%f",result);
     //class method test
-    [ProbleClass1 test];
+    [ProbleClass1 classMethod];
 }
 
 @end

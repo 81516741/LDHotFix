@@ -9,7 +9,7 @@
 #import "ProbleClass1.h"
 
 @implementation ProbleClass1
-+ (void)test {
-    NSLog(@"你峨眉的的");
++ (void)classMethod {
+    NSLog(@"我是类方法");
 }
 @end

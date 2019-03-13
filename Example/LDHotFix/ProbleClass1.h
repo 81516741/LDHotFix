@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface ProbleClass1 : NSObject
-+ (void)test;
++ (void)classMethod;
 @end
-
-NS_ASSUME_NONNULL_END
