@@ -1,18 +1,21 @@
+
 # HotFix使用说明
-####本热修复的主要功能描述
+#### 本热修复的主要功能描述
 1.可以通过js替换项目中任意类的实例方法和类方法
 2.可以在原来的方法之前和之后执行一些修正代码
 3.可以修改原来方法的传入参数，然后在调用原方法
-###1.如何用CocoaPods安装
-######在你的Podfile文件中加上:
+### 1.如何用CocoaPods安装
+###### 在你的Podfile文件中加上:
 
+```
 pod ‘LDHotFix’
+```
 
 
-###2.如何使用
+### 2.如何使用
 1.这里以本地js的方式演示，实际过程中js是从服务器下发的
 
-//hook 类方法
+```//hook 类方法
 fixClassMethod
 ('ProbleClass1','classMethod',
 function(instance, originInvocation,originArguments){
@@ -48,11 +51,12 @@ console.log('因为此时传入的参数是分母为零，所以下句代码不�
 runInvocation(originInvocation);
 }
 });
+```
 
 
 2.在 Appdelegate 里面执行如下代码
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+```- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //注册
 [LDHotfixTool registerHotfix];
 //加载本地js
@@ -62,8 +66,7 @@ NSString * jsStr  = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8Str
 [LDHotfixTool evaluateScript:jsStr];
 return YES;
 }
-
-###3.核心文件 LDHotfix
-#####具体如何使用，请下载示例，使用非常简单，如有问题欢迎联系我,微信号 81516741
-
+```
+### 3.核心文件 LDHotfix
+##### 具体如何使用，请下载示例，使用非常简单，如有问题欢迎联系我,微信号 81516741
 
