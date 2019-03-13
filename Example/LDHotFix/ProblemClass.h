@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface ProblemClass : NSObject
-- (float)divideUsingDenominator:(NSInteger)denominator dd:(NSString *)nimei;
+- (float)divide:(NSInteger)denominator dd:(NSString *)nimei;
 - (void)test:(CGFloat)value1 value2:(NSInteger)value2 value3:(NSString *)value3;
++ (void)testNimei:(CGFloat)ddd;
+
 @end

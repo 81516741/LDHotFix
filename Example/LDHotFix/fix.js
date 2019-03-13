@@ -1,5 +1,13 @@
+fixClassMethod
+('ProbleClass1','test',
+ function(instance, originInvocation, originArguments){
+ console.log('类 方法被替 前执行');
+ runInvocation(originInvocation);
+ console.log('类 方法被替换了 后执行');
+ });
+
 fixInstanceMethod
-('ProblemClass','divideUsingDenominator:dd:',
+('ProblemClass','divide:dd:',
 function(instance, originInvocation, originArguments){
     console.log(instance)
     console.log(originInvocation)
@@ -19,6 +27,11 @@ function(instance, originInvocation, originArguments){
 fixInstanceMethod
 ('ProblemClass','test:value2:value3:',
  function(instance, originInvocation, originArguments){
+ console.log('在对象方法前执行');
+ console.log('原样执行原来的方法');
+ runInvocation(originInvocation);
+ console.log('改变传参执行原来的方法');
  runInvocation(originInvocation,['Float(3.141592653)','Int(81516741)','就是替换了']);
+ console.log('在对象方法后执行');
  });
 

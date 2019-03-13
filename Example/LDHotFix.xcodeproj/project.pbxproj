@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D78C17A223750FC00ECC48E /* ProbleClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D78C179223750FC00ECC48E /* ProbleClass1.m */; };
 		0DDAA6C122327660007AA2E9 /* fix.js in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAA6BD22327660007AA2E9 /* fix.js */; };
 		0DDAA6C222327660007AA2E9 /* ProblemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA6BE22327660007AA2E9 /* ProblemClass.m */; };
 		0DDAA6C322327660007AA2E9 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA6BF22327660007AA2E9 /* TestObject.m */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		06AFA88473E78D50D4431C22 /* Pods-LDHotFix_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDHotFix_Tests.release.xcconfig"; path = "Target Support Files/Pods-LDHotFix_Tests/Pods-LDHotFix_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0D78C178223750FC00ECC48E /* ProbleClass1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProbleClass1.h; sourceTree = "<group>"; };
+		0D78C179223750FC00ECC48E /* ProbleClass1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProbleClass1.m; sourceTree = "<group>"; };
 		0DDAA6BC22327660007AA2E9 /* ProblemClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemClass.h; sourceTree = "<group>"; };
 		0DDAA6BD22327660007AA2E9 /* fix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fix.js; sourceTree = "<group>"; };
 		0DDAA6BE22327660007AA2E9 /* ProblemClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemClass.m; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				0DDAA6BD22327660007AA2E9 /* fix.js */,
+				0D78C178223750FC00ECC48E /* ProbleClass1.h */,
+				0D78C179223750FC00ECC48E /* ProbleClass1.m */,
 				0DDAA6BC22327660007AA2E9 /* ProblemClass.h */,
 				0DDAA6BE22327660007AA2E9 /* ProblemClass.m */,
 				0DDAA6C022327660007AA2E9 /* TestObject.h */,
@@ -375,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DDAA6C222327660007AA2E9 /* ProblemClass.m in Sources */,
+				0D78C17A223750FC00ECC48E /* ProbleClass1.m in Sources */,
 				6003F59E195388D20070C39A /* LDAppDelegate.m in Sources */,
 				0DDAA6C322327660007AA2E9 /* TestObject.m in Sources */,
 				6003F5A7195388D20070C39A /* LDViewController.m in Sources */,

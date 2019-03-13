@@ -11,7 +11,7 @@
 
 @implementation ProblemClass
 
-- (float)divideUsingDenominator:(NSInteger)denominator dd:(NSString *)nimei
+- (float)divide:(NSInteger)denominator dd:(NSString *)nimei
 {
     [TestObject log:@"sdd" str:@"3333"];
     float value =  1.f/denominator;
@@ -20,4 +20,8 @@
 - (void)test:(CGFloat)value1 value2:(NSInteger)value2 value3:(NSString *)value3{
     NSLog(@"最终打印%f----%ld---%@",value1,(long)value2,value3);
 }
++ (void)testNimei:(CGFloat)ddd {
+    NSLog(@"最终打印%f",ddd);
+}
+
 @end

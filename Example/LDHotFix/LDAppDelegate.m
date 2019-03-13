@@ -10,7 +10,9 @@
 #import "LDHotfixTool.h"
 #import "TestObject.h"
 #import "LDViewController.h"
-
+#import <Aspects/Aspects.h>
+#import "ProblemClass.h"
+#import <objc/runtime.h>
 @interface LDAppDelegate ()
 
 @end
@@ -32,7 +34,7 @@
                                                        error:nil];
     
     [LDHotfixTool evaluateScript:jsStr];
-    
+
     return YES;
 }
 

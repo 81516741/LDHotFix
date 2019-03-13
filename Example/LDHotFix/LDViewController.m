@@ -8,6 +8,7 @@
 
 #import "LDViewController.h"
 #import "ProblemClass.h"
+#import "ProbleClass1.h"
 @interface LDViewController ()
 
 @end
@@ -22,10 +23,13 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    //instance method test
     ProblemClass * pb = [[ProblemClass alloc] init];
-    CGFloat result = [pb divideUsingDenominator:0 dd:@"fadsf"];
-    [pb test:33 value2:3.1111 value3:@""];
+    CGFloat result = [pb divide:0 dd:@"fadsf"];
+    [pb test:3.1111 value2:3333 value3:@"11111"];
     NSLog(@"结果是%f",result);
+    //class method test
+    [ProbleClass1 test];
 }
 
 @end
